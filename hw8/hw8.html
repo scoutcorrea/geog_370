@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+    <h1>Homework 8</h1>
+    <a href="./hw8.png"><img src="./hw8.png" width='700px'></a>
+    <h3>The primary question that could be answered with my map is: which classified trout streams are located within or close to important bird areas in Wisconsin?
+        I was interested in answering this question because many birds that live within important bird areas are birds of prey. Since one of their primary sources of 
+        food come from trout, I wanted to determine where trout streams intersect with these areas. I chose Wisconsin because I live and grew up there. First, I used buffer() on the important bird areas layer since areas encircling 
+        preservation areas are also important regions to consider. I used a 1280 meter buffer, which is almost equivalent to the width of 20 acres. Then I used union() to combine the original 
+        important bird areas layer with the buffered layer. With the unified layer, I used intersect() to select the trout streams that were located within the bird areas and the 
+        buffer. 
+    </h3>
+    <a href="https://data-wi-dnr.opendata.arcgis.com/datasets/a95d409126754d349ecc565698683d9e_9/explore?location=44.668183%2C-89.843300%2C7.79"> Trout Streams Data Source </a>
+    <p></p>
+    <a href="https://data-wi-dnr.opendata.arcgis.com/datasets/c3cfe7a76a7f42a8b91040bc25d6a39a_5/explore?location=44.355172%2C-89.805650%2C7.46"> Bird Areas Data Source </a>
+</body>
+</html>
