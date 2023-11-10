@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+<body>
+    <h1>Homework 3</h1>
+    <h1>In this project I learned how to display images in different projections.</h1>
+
+    <p>The first thing I did to make the projections was install the Indicatrix mapper plug-in. Next, I created a vector layer from the world projections folder in Sakai. Specifically, I used ne_10m_admin_0_countries in Shapefile format. Using the default settings, the Indicatrix mapper added longitude and latitude lines and generated circles. After clicking the button in the bottom right corner of the QGIS screen, I changed the projection type after searching for the projection name in the filter bar. Changing the projection altered the lines and circles. The differences in circle shape and size is a reflection of the distortions each type of projection had to make. After each projection, I created a new print layout, added text, and exported the image as a PNG.</p>
+    
+    <h2>WGS 84 / Pseudo-Mercator Projection</h2>
+    <h3>This projection maintained shape and distance, but area and direction were distorted. Area increases greatly closer to the top and bottom of the map.</h3>
+    <a href=".//pngs/epsg3857_world_projection.png">
+    <img src=".//pngs/epsg3857_world_projection.png" alt="WGS84" width='500px'>
+    </a>
+    <p></p>
+    <h2>WGS 84 Projection</h2>
+    <h3>This projection did not preserve shape, area, or direction. However, distance was the same. Shape was preserved until the top and bottom circles become more distorted.</h3>
+    <a href=".//pngs/epsg4326_world_projection.png">
+    <img src=".//pngs/epsg4326_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>Sphere Winkel I Projection</h2>
+    <h3>This projection preserved shape and direction. Area and distance are slightly distorted towards the edges of the map.</h3>
+    <a href=".//pngs/esri53018_world_projection.png">
+    <img src=".//pngs/esri53018_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>World Polyconic Projection</h2>
+    <h3>World Polyconic did not really preserve shape, area, direction, or distance well. Distortion gets worse closer to the edges of the projection.</h3>
+    <a href=".//pngs/esri54021_world_projection.png">
+    <img src=".//pngs/esri54021_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>This projection preserves shape, area, distance, and direction well closest to the North Pole. As it gets further away, all of those properties become more distorted.</h3>
+    <a href=".//pngs/esri54027_world_projection.png">
+    <img src=".//pngs/esri54027_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>World Robinson Projection</h2>
+    <h3>This projection preserves shape and area closer to the Equator. As it goes further, area increases and the shape becomes more distorted. Direction are distance are preserved.</h3>
+    <a href=".//pngs/esri54030_world_projection.png">
+    <img src=".//pngs/esri54030_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>Like the one before, this projection preserves shape, area, and direction pretty well around the Equator. Shape and area are very distorted closer to the Poles. Distance is  closer to the Equator.</h3>
+    <a href=".//pngs/esri54034_world_projection.png">
+    <img src=".//pngs/esri54034_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>This projection is very similar to the World Equidistant Conic. Shape and area are better preserved by the North Pole, but by the South Pole everything becomes more distorted. Direction, distance, area, and shape are increasingly distorted.</h3>
+    <a href=".//pngs/esri102016_world_projection.png">
+    <img src=".//pngs/esri102016_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>The World from Space Projection</h2>
+    <h3>This projection preserves shape, area, distance, and direction very well because it displays Earth closest to its actual shape—a sphere. The other projections attempt to visualize a sphere in a flat way to display all of the continents. One drawback of this projection, despite having no distortion, is that certain continents are not displayed.</h3>
+    <a href=".//pngs/esri102038_world_projection.png">
+    <img src=".//pngs/esri102038_world_projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project:</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natural Earth 1:10m Cultural Vector</a>
+</body>
+</html>
